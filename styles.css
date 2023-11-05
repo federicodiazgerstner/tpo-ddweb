@@ -1,12 +1,24 @@
+*{
+    box-sizing: border-box;
+}
 html {
     height: 100%;
 }
 
 body {
+    width: 100vw;
     min-height: 100vh;
     position: relative;
 }
+
+#cursos {
+    width: 100vw;
+}
+.cursos {
+    margin-bottom: 100px;
+}
 .curso {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -16,7 +28,7 @@ body {
 }
 
 .curso img {
-    max-width: 200px; 
+    max-width: 100%; 
 }
 
 .curso-info {
@@ -50,9 +62,21 @@ body {
 }
 
 .nav-item {
-    margin-right: 20px;
+    font-size: 1rem;
 }
 
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li {
+    padding: 0 10px;
+}
+
+.red-text {
+    color: red;
+}
 
 /* Se hace para editar los estilos de bootstrap y poder poner en color blanco los textos*/
 /* Establecer el color de los enlaces de navegación a blanco */
@@ -81,4 +105,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*Se cambia el layout para dispositivos Desktop*/
+@media(min-width: 600px) {
+    .curso-data {
+        display: flex;
+    }
+    .curso img {
+        max-width: 200px; 
+    }
 }

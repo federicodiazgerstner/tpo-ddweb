@@ -14,322 +14,320 @@
         <a class="navbar-brand" href="main.html"><strong>CraftU</strong></a>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Log-out</a>
+                <a class="nav-link" href="#Completados">Cursos Completados</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#Completados">Cursos Completados</a>
+                <a class="nav-link" href="index.html" style="color: rgb(255, 255, 255); font-weight: bold;">Log-out</a>
             </li>
         </ul>
     </nav>
 
-        <div class="container mt-4">
-            <!-- Portada y título -->
-            <div class="jumbotron">
-                <h1><strong>Explora el Mundo del Aprendizaje en <strong>CraftU</strong></strong></h1>
-                <p>Bienvenido a CraftU, tu destino de aprendizaje en línea. Descubre una amplia gama de cursos diseñados para enriquecer tu conocimiento y habilidades. Ya sea que estés interesado en programación, diseño, negocios o cualquier otro tema, CraftU tiene algo para ti. Aprovecha la oportunidad de aprender de expertos y llevar tu conocimiento al siguiente nivel!</p>
-            </div>
-
+    <div class="cursos container mt-4">
+        <!-- Portada y título -->
+        <div class="jumbotron">
+            <h1><strong>Explora el Mundo del Aprendizaje en <strong>CraftU</strong></strong></h1>
+            <p>Bienvenido a CraftU, tu destino de aprendizaje en línea. Descubre una amplia gama de cursos diseñados para enriquecer tu conocimiento y habilidades. Ya sea que estés interesado en programación, diseño, negocios o cualquier otro tema, CraftU tiene algo para ti. Aprovecha la oportunidad de aprender de expertos y llevar tu conocimiento al siguiente nivel!</p>
+        </div>
         <!-- Conteo de cursos -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h2><strong>Cursos Disponibles:</strong></h2>
-    <section id="CURSOS">
-            <!-- Curso 1: Programación -->
-            <table class="curso" id="curso1">
-                <tr class="">
-                    <td>
-                        <div class="curso-info">
-                            <img src="Multimedia/curso1.jpg" alt="Curso 1">
+        <div class="row">
+            <div class="col-md-12">
+                <h2><strong>Cursos Disponibles:</strong></h2>
+                <section id="CURSOS">
+                        <!-- Curso 1: Programación -->
+                        <div class="curso" id="curso1">
+                            <div class="curso-data">
+                                <div>
+                                    <div class="curso-info">
+                                        <img src="Multimedia/curso1.jpg" alt="Curso 1">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="curso-info">
+                                        <h3>Curso 1: Introducción a la Programación</h3>
+                                        <p>Un curso para principiantes que cubre los conceptos básicos de la programación y enseña a escribir código en un lenguaje como Python.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div class="curso-info">
-                            <h3>Curso 1: Introducción a la Programación</h3>
-                            <p>Un curso para principiantes que cubre los conceptos básicos de la programación y enseña a escribir código en un lenguaje como Python.</p>
+                        <!-- Tabla 2: Unidades del Curso -->
+                        <div class="curso-unidades" id="curso1-unidades" style="display: none;">
+                                    <h4 class="text-left"><strong>Unidades:</strong></h4>
+                                    <ul class="list-unstyled">
+                                        <li><input type="checkbox" id="curso1-unidad1" onchange="actualizarProgreso('curso1')"> <strong>Unidad 1:</strong> Introducción a la programación con Python</li>
+                                        <li><input type="checkbox" id="curso1-unidad2" onchange="actualizarProgreso('curso1')"> <strong>Unidad 2:</strong> Estructuras de Datos en Python</li>
+                                        <li><input type="checkbox" id="curso1-unidad3" onchange="actualizarProgreso('curso1')"> <strong>Unidad 3:</strong> Programación Orientada a Objetos (POO)</li>
+                                        <li><input type="checkbox" id="curso1-unidad4" onchange="actualizarProgreso('curso1')"> <strong>Unidad 4:</strong> Manejo de Excepciones y Errores</li>
+                                        <li><input type="checkbox" id="curso1-unidad5" onchange="actualizarProgreso('curso1')"> <strong>Unidad 5:</strong> Trabajo con Archivos y Manipulación de Datos</li>
+                                        <li><input type="checkbox" id="curso1-unidad6" onchange="actualizarProgreso('curso1')"> <strong>Unidad 6:</strong> Introducción a Bibliotecas y Frameworks</li>
+                                    </ul>
+                                    <div class="progress">
+                                        <div id="curso1-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p id="curso1-completo" style="display: none;">¡Curso 1: Introducción a la Programación completado!</p>
                         </div>
-                    </td>
-                </tr>
-            </table>
-            <!-- Tabla 2: Unidades del Curso -->
-            <div class="curso-unidades" id="curso1-unidades" style="display: none;">
-                        <h4 class="text-left"><strong>Unidades:</strong></h4>
-                        <ul class="list-unstyled">
-                            <li><input type="checkbox" id="curso1-unidad1" onchange="actualizarProgreso('curso1')"> <strong>Unidad 1:</strong> Introducción a la programación con Python</li>
-                            <li><input type="checkbox" id="curso1-unidad2" onchange="actualizarProgreso('curso1')"> <strong>Unidad 2:</strong> Estructuras de Datos en Python</li>
-                            <li><input type="checkbox" id="curso1-unidad3" onchange="actualizarProgreso('curso1')"> <strong>Unidad 3:</strong> Programación Orientada a Objetos (POO)</li>
-                            <li><input type="checkbox" id="curso1-unidad4" onchange="actualizarProgreso('curso1')"> <strong>Unidad 4:</strong> Manejo de Excepciones y Errores</li>
-                            <li><input type="checkbox" id="curso1-unidad5" onchange="actualizarProgreso('curso1')"> <strong>Unidad 5:</strong> Trabajo con Archivos y Manipulación de Datos</li>
-                            <li><input type="checkbox" id="curso1-unidad6" onchange="actualizarProgreso('curso1')"> <strong>Unidad 6:</strong> Introducción a Bibliotecas y Frameworks</li>
-                        </ul>
-                        <div class="progress">
-                            <div id="curso1-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        <!-- Botón de Inscripción (fuera de las tablas) -->
+                        <div class="boton" style="text-align: center;">
+                            <a class="btn btn-primary" data-curso="curso1" data-completado="false" onclick="toggleInscripcion('curso1')">Inscribirse</a>
                         </div>
-                        <p id="curso1-completo" style="display: none;">¡Curso 1: Introducción a la Programación completado!</p>
-            </div>
-            <!-- Botón de Inscripción (fuera de las tablas) -->
-            <div class="boton" style="text-align: center;">
-                <a class="btn btn-primary" data-curso="curso1" data-completado="false" onclick="toggleInscripcion('curso1')">Inscribirse</a>
-            </div>
 
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <p class="linea-negra"></p>
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <!-- Curso 2: Programación Avanzada -->
-            <table class="curso" id="curso2">
-                <tr>
-                    <td>
-                        <div class="curso-info">
-                            <img src="Multimedia/curso2.jpg" alt="Curso 2">
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <p class="linea-negra"></p>
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <!-- Curso 2: Programación Avanzada -->
+                        <div class="curso" id="curso2">
+                            <div>
+                                <div>
+                                    <div class="curso-info">
+                                        <img src="Multimedia/curso2.jpg" alt="Curso 2">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="curso-info">
+                                        <h3>Curso 2: Programación Avanzada</h3>
+                                        <p>Un curso para aquellos que desean profundizar en la programación y explorar temas avanzados en desarrollo de software.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div class="curso-info">
-                            <h3>Curso 2: Programación Avanzada</h3>
-                            <p>Un curso para aquellos que desean profundizar en la programación y explorar temas avanzados en desarrollo de software.</p>
+                        <!-- Tabla 2: Unidades del Curso -->
+                        <div class="curso-unidades" id="curso2-unidades" style="display: none;">
+                            <h4 class="text-left"><strong>Unidades:</strong></h4>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox" id="curso2-unidad1" onchange="actualizarProgreso('curso2')"> <strong>Unidad 1:</strong> Programación orientada a objetos en Python.</li>
+                                <li><input type="checkbox" id="curso2-unidad2" onchange="actualizarProgreso('curso2')"> <strong>Unidad 2:</strong> Manejo de excepciones y errores en Python.</li>
+                                <li><input type="checkbox" id="curso2-unidad3" onchange="actualizarProgreso('curso2')"> <strong>Unidad 3:</strong> Bibliotecas y módulos avanzados en Python.</li>
+                                <li><input type="checkbox" id="curso2-unidad4" onchange="actualizarProgreso('curso2')"> <strong>Unidad 4:</strong> Programación concurrente y paralela en Python.</li>
+                                <li><input type="checkbox" id="curso2-unidad5" onchange="actualizarProgreso('curso2')"> <strong>Unidad 5:</strong> Desarrollo de aplicaciones avanzadas en Python.</li>
+                                <li><input type="checkbox" id="curso2-unidad6" onchange="actualizarProgreso('curso2')"> <strong>Unidad 6:</strong> Pruebas, depuración y optimización de código en Python.</li>
+                            </ul>
+                            <div class="progress">
+                                <div id="curso2-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="curso2-completo" style="display: none;">¡Curso 2: Programación Avanzada completado!</p>
                         </div>
-                    </td>
-                </tr>
-            </table>
-            <!-- Tabla 2: Unidades del Curso -->
-            <div class="curso-unidades" id="curso2-unidades" style="display: none;">
-                <h4 class="text-left"><strong>Unidades:</strong></h4>
-                <ul class="list-unstyled">
-                    <li><input type="checkbox" id="curso2-unidad1" onchange="actualizarProgreso('curso2')"> <strong>Unidad 1:</strong> Programación orientada a objetos en Python.</li>
-                    <li><input type="checkbox" id="curso2-unidad2" onchange="actualizarProgreso('curso2')"> <strong>Unidad 2:</strong> Manejo de excepciones y errores en Python.</li>
-                    <li><input type="checkbox" id="curso2-unidad3" onchange="actualizarProgreso('curso2')"> <strong>Unidad 3:</strong> Bibliotecas y módulos avanzados en Python.</li>
-                    <li><input type="checkbox" id="curso2-unidad4" onchange="actualizarProgreso('curso2')"> <strong>Unidad 4:</strong> Programación concurrente y paralela en Python.</li>
-                    <li><input type="checkbox" id="curso2-unidad5" onchange="actualizarProgreso('curso2')"> <strong>Unidad 5:</strong> Desarrollo de aplicaciones avanzadas en Python.</li>
-                    <li><input type="checkbox" id="curso2-unidad6" onchange="actualizarProgreso('curso2')"> <strong>Unidad 6:</strong> Pruebas, depuración y optimización de código en Python.</li>
-                </ul>
-                <div class="progress">
-                    <div id="curso2-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p id="curso2-completo" style="display: none;">¡Curso 2: Programación Avanzada completado!</p>
-            </div>
-            <!-- Botón de Inscripción (fuera de las tablas) -->
-            <div class="boton" style="text-align: center;">
-                <a class="btn btn-primary" data-curso="curso2" data-completado="false" onclick="toggleInscripcion('curso2')">Inscribirse</a>
-            </div>
+                        <!-- Botón de Inscripción (fuera de las tablas) -->
+                        <div class="boton" style="text-align: center;">
+                            <a class="btn btn-primary" data-curso="curso2" data-completado="false" onclick="toggleInscripcion('curso2')">Inscribirse</a>
+                        </div>
 
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <p class="linea-negra"></p>
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <!-- Curso 3: Análisis de Datos con Python -->
-            <table class="curso" id="curso3">
-                <tr>
-                    <td>
-                        <div class="curso-info">
-                            <img src="Multimedia/curso3.jpg" alt="Curso 3">
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <p class="linea-negra"></p>
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <!-- Curso 3: Análisis de Datos con Python -->
+                        <div class="curso" id="curso3">
+                            <div>
+                                <div>
+                                    <div class="curso-info">
+                                        <img src="Multimedia/curso3.jpg" alt="Curso 3">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="curso-info">
+                                        <h3>Curso 3: Análisis de Datos con Python</h3>
+                                        <p>Descubre cómo analizar datos y obtener información valiosa utilizando Python y herramientas de análisis de datos.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div class="curso-info">
-                            <h3>Curso 3: Análisis de Datos con Python</h3>
-                            <p>Descubre cómo analizar datos y obtener información valiosa utilizando Python y herramientas de análisis de datos.</p>
+                        <!-- Tabla 2: Unidades del Curso -->
+                        <div class="curso-unidades" id="curso3-unidades" style="display: none;">
+                            <h4 class="text-left"><strong>Unidades:</strong></h4>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox" id="curso3-unidad1" onchange="actualizarProgreso('curso3')"> <strong>Unidad 1:</strong> Introducción a la ciencia de datos y Python.</li>
+                                <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 2:</strong> Manipulación de datos con bibliotecas como pandas y NumPy.</li>
+                                <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 3:</strong> Visualización de datos con matplotlib y seaborn.</li>
+                                <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 4:</strong> Análisis estadístico y modelado de datos con Python.</li>
+                                <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 5:</strong> Aprendizaje automático con scikit-learn en Python.</li>
+                                <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 6:</strong> Proyecto de análisis de datos con Python.</li>
+                            </ul>
+                            <div class="progress">
+                                <div id="curso3-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="curso3-completo" style="display: none;">¡Curso 3: Análisis de Datos con Python completado!</p>
                         </div>
-                    </td>
-                </tr>
-            </table>
-            <!-- Tabla 2: Unidades del Curso -->
-            <div class="curso-unidades" id="curso3-unidades" style="display: none;">
-                <h4 class="text-left"><strong>Unidades:</strong></h4>
-                <ul class="list-unstyled">
-                    <li><input type="checkbox" id="curso3-unidad1" onchange="actualizarProgreso('curso3')"> <strong>Unidad 1:</strong> Introducción a la ciencia de datos y Python.</li>
-                    <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 2:</strong> Manipulación de datos con bibliotecas como pandas y NumPy.</li>
-                    <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 3:</strong> Visualización de datos con matplotlib y seaborn.</li>
-                    <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 4:</strong> Análisis estadístico y modelado de datos con Python.</li>
-                    <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 5:</strong> Aprendizaje automático con scikit-learn en Python.</li>
-                    <li><input type="checkbox" id="curso3-unidad2" onchange="actualizarProgreso('curso3')"> <strong>Unidad 6:</strong> Proyecto de análisis de datos con Python.</li>
-                </ul>
-                <div class="progress">
-                    <div id="curso3-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p id="curso3-completo" style="display: none;">¡Curso 3: Análisis de Datos con Python completado!</p>
-            </div>
-            <!-- Botón de Inscripción (fuera de las tablas) -->
-            <div class="boton" style="text-align: center;">
-                <a class="btn btn-primary" data-curso="curso3" data-completado="false" onclick="toggleInscripcion('curso3')">Inscribirse</a>
-            </div>
+                        <!-- Botón de Inscripción (fuera de las tablas) -->
+                        <div class="boton" style="text-align: center;">
+                            <a class="btn btn-primary" data-curso="curso3" data-completado="false" onclick="toggleInscripcion('curso3')">Inscribirse</a>
+                        </div>
 
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <p class="linea-negra"></p>
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <!-- Curso 4: Microsoft Word -->
-            <table class="curso" id="curso4">
-                <tr>
-                    <td>
-                        <div class="curso-info">
-                            <img src="Multimedia/curso4.jpg" alt="Curso 4">
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <p class="linea-negra"></p>
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <!-- Curso 4: Microsoft Word -->
+                        <div class="curso" id="curso4">
+                            <div>
+                                <div>
+                                    <div class="curso-info">
+                                        <img src="Multimedia/curso4.jpg" alt="Curso 4">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="curso-info">
+                                        <h3>Curso 4: Microsoft Word</h3>
+                                        <p>Aprende a utilizar Microsoft Word para crear documentos profesionales, informes y currículums de manera efectiva.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div class="curso-info">
-                            <h3>Curso 4: Microsoft Word</h3>
-                            <p>Aprende a utilizar Microsoft Word para crear documentos profesionales, informes y currículums de manera efectiva.</p>
+                        <!-- Tabla 2: Unidades del Curso -->
+                        <div class="curso-unidades" id="curso4-unidades" style="display: none;">
+                            <h4 class="text-left"><strong>Unidades:</strong></h4>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox" id="curso4-unidad1" onchange="actualizarProgreso('curso4')"> <strong>Unidad 1:</strong> Introducción a Microsoft Word: Interfaz y herramientas básicas.</li>
+                                <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 2:</strong> Formato de texto y párrafos en Word.</li>
+                                <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 3:</strong> Diseño de documentos y estilos en Word.</li>
+                                <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 4:</strong> Tablas e imágenes en Word.</li>
+                                <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 5:</strong> Funciones avanzadas, como fusionar correspondencia en Word.</li>
+                                <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 6:</strong> Colaboración y revisión de documentos en Word.</li>
+                            </ul>
+                            <div class="progress">
+                                <div id="curso4-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="curso4-completo" style="display: none;">¡Curso 4: Microsoft Word completado!</p>
                         </div>
-                    </td>
-                </tr>
-            </table>
-            <!-- Tabla 2: Unidades del Curso -->
-            <div class="curso-unidades" id="curso4-unidades" style="display: none;">
-                <h4 class="text-left"><strong>Unidades:</strong></h4>
-                <ul class="list-unstyled">
-                    <li><input type="checkbox" id="curso4-unidad1" onchange="actualizarProgreso('curso4')"> <strong>Unidad 1:</strong> Introducción a Microsoft Word: Interfaz y herramientas básicas.</li>
-                    <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 2:</strong> Formato de texto y párrafos en Word.</li>
-                    <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 3:</strong> Diseño de documentos y estilos en Word.</li>
-                    <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 4:</strong> Tablas e imágenes en Word.</li>
-                    <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 5:</strong> Funciones avanzadas, como fusionar correspondencia en Word.</li>
-                    <li><input type="checkbox" id="curso4-unidad2" onchange="actualizarProgreso('curso4')"> <strong>Unidad 6:</strong> Colaboración y revisión de documentos en Word.</li>
-                </ul>
-                <div class="progress">
-                    <div id="curso4-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p id="curso4-completo" style="display: none;">¡Curso 4: Microsoft Word completado!</p>
-            </div>
-            <!-- Botón de Inscripción (fuera de las tablas) -->
-            <div class="boton" style="text-align: center;">
-                <a class="btn btn-primary" data-curso="curso4" data-completado="false" onclick="toggleInscripcion('curso4')">Inscribirse</a>
-            </div>
+                        <!-- Botón de Inscripción (fuera de las tablas) -->
+                        <div class="boton" style="text-align: center;">
+                            <a class="btn btn-primary" data-curso="curso4" data-completado="false" onclick="toggleInscripcion('curso4')">Inscribirse</a>
+                        </div>
 
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <p class="linea-negra"></p>
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <!-- Curso 5: Microsoft Excel -->
-            <table class="curso" id="curso5">
-                <tr>
-                    <td>
-                        <div class="curso-info">
-                            <img src="Multimedia/curso5.jpg" alt="Curso 5">
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <p class="linea-negra"></p>
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <!-- Curso 5: Microsoft Excel -->
+                        <div class="curso" id="curso5">
+                            <div>
+                                <div>
+                                    <div class="curso-info">
+                                        <img src="Multimedia/curso5.jpg" alt="Curso 5">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="curso-info">
+                                        <h3>Curso 5: Microsoft Excel</h3>
+                                        <p>Aprende a utilizar Microsoft Excel para realizar cálculos, análisis de datos y crear hojas de cálculo profesionales.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div class="curso-info">
-                            <h3>Curso 5: Microsoft Excel</h3>
-                            <p>Aprende a utilizar Microsoft Excel para realizar cálculos, análisis de datos y crear hojas de cálculo profesionales.</p>
+                        <!-- Tabla 2: Unidades del Curso -->
+                        <div class="curso-unidades" id="curso5-unidades" style="display: none;">
+                            <h4 class="text-left"><strong>Unidades:</strong></h4>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox" id="curso5-unidad1" onchange="actualizarProgreso('curso5')"> <strong>Unidad 1:</strong> Introducción a Microsoft Excel: Hojas de cálculo y celdas.</li>
+                                <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 2:</strong> Fórmulas y funciones básicas en Excel.</li>
+                                <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 3:</strong> Formato de datos y gráficos en Excel.</li>
+                                <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 4:</strong> Tablas dinámicas y análisis de datos en Excel.</li>
+                                <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 5:</strong> Automatización con macros en Excel.</li>
+                                <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 6:</strong> Colaboración y uso compartido de hojas de cálculo en Excel.</li>
+                            </ul>
+                            <div class="progress">
+                                <div id="curso5-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="curso5-completo" style="display: none;">¡Curso 5: Microsoft Excel completado!</p>
                         </div>
-                    </td>
-                </tr>
-            </table>
-            <!-- Tabla 2: Unidades del Curso -->
-            <div class="curso-unidades" id="curso5-unidades" style="display: none;">
-                <h4 class="text-left"><strong>Unidades:</strong></h4>
-                <ul class="list-unstyled">
-                    <li><input type="checkbox" id="curso5-unidad1" onchange="actualizarProgreso('curso5')"> <strong>Unidad 1:</strong> Introducción a Microsoft Excel: Hojas de cálculo y celdas.</li>
-                    <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 2:</strong> Fórmulas y funciones básicas en Excel.</li>
-                    <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 3:</strong> Formato de datos y gráficos en Excel.</li>
-                    <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 4:</strong> Tablas dinámicas y análisis de datos en Excel.</li>
-                    <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 5:</strong> Automatización con macros en Excel.</li>
-                    <li><input type="checkbox" id="curso5-unidad2" onchange="actualizarProgreso('curso5')"> <strong>Unidad 6:</strong> Colaboración y uso compartido de hojas de cálculo en Excel.</li>
-                </ul>
-                <div class="progress">
-                    <div id="curso5-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p id="curso5-completo" style="display: none;">¡Curso 5: Microsoft Excel completado!</p>
-            </div>
-            <!-- Botón de Inscripción (fuera de las tablas) -->
-            <div class="boton" style="text-align: center;">
-                <a class="btn btn-primary" data-curso="curso5" data-completado="false" onclick="toggleInscripcion('curso5')">Inscribirse</a>
-            </div>
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <p class="linea-negra"></p>
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <!-- Curso 6: Microsoft PowerPoint -->
-            <table class="curso" id="curso6">
-                <tr>
-                    <td>
-                        <div class="curso-info">
-                            <img src="Multimedia/curso6.jpg" alt="Curso 6">
+                        <!-- Botón de Inscripción (fuera de las tablas) -->
+                        <div class="boton" style="text-align: center;">
+                            <a class="btn btn-primary" data-curso="curso5" data-completado="false" onclick="toggleInscripcion('curso5')">Inscribirse</a>
                         </div>
-                    </td>
-                    <td>
-                        <div class="curso-info">
-                            <h3>Curso 6: Microsoft PowerPoint</h3>
-                            <p>Aprende a crear presentaciones efectivas utilizando Microsoft PowerPoint.</p>
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <p class="linea-negra"></p>
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <!-- Curso 6: Microsoft PowerPoint -->
+                        <div class="curso" id="curso6">
+                            <div>
+                                <div>
+                                    <div class="curso-info">
+                                        <img src="Multimedia/curso6.jpg" alt="Curso 6">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="curso-info">
+                                        <h3>Curso 6: Microsoft PowerPoint</h3>
+                                        <p>Aprende a crear presentaciones efectivas utilizando Microsoft PowerPoint.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                </tr>
-            </table>
-            <!-- Tabla 2: Unidades del Curso -->
-            <div class="curso-unidades" id="curso6-unidades" style="display: none;">
-                <h4 class="text-left"><strong>Unidades:</strong></h4>
-                <ul class="list-unstyled">
-                    <li><input type="checkbox" id="curso6-unidad1" onchange="actualizarProgreso('curso6')"> <strong>Unidad 1:</strong> Introducción a Microsoft PowerPoint: Creación de presentaciones.</li>
-                    <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 2:</strong> Diseño de diapositivas y plantillas en PowerPoint.</li>
-                    <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 3:</strong> Inserción de texto, imágenes y multimedia en PowerPoint.</li>
-                    <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 4:</strong> Animaciones y transiciones en PowerPoint.</li>
-                    <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 5:</strong> Práctica de habilidades de presentación en PowerPoint.</li>
-                    <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 6:</strong> Colaboración en la creación de presentaciones en PowerPoint.</li>
-                </ul>
-                <div class="progress">
-                    <div id="curso6-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p id="curso6-completo" style="display: none;">¡Curso 6: Microsoft PowerPoint completado!</p>
-            </div>
-            <!-- Botón de Inscripción (fuera de las tablas) -->
-            <div class="boton" style="text-align: center;">
-                <a class="btn btn-primary" data-curso="curso6" data-completado="false" onclick="toggleInscripcion('curso6')">Inscribirse</a>
-            </div>
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <p class="linea-negra"></p>
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-            <!-- Curso 7: Marketing Digital -->
-            <table class="curso" id="curso7">
-                <tr>
-                    <td>
-                        <div class="curso-info">
-                            <img src="Multimedia/curso7.jpg" alt="Curso 7">
+                        <!-- Tabla 2: Unidades del Curso -->
+                        <div class="curso-unidades" id="curso6-unidades" style="display: none;">
+                            <h4 class="text-left"><strong>Unidades:</strong></h4>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox" id="curso6-unidad1" onchange="actualizarProgreso('curso6')"> <strong>Unidad 1:</strong> Introducción a Microsoft PowerPoint: Creación de presentaciones.</li>
+                                <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 2:</strong> Diseño de diapositivas y plantillas en PowerPoint.</li>
+                                <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 3:</strong> Inserción de texto, imágenes y multimedia en PowerPoint.</li>
+                                <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 4:</strong> Animaciones y transiciones en PowerPoint.</li>
+                                <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 5:</strong> Práctica de habilidades de presentación en PowerPoint.</li>
+                                <li><input type="checkbox" id="curso6-unidad2" onchange="actualizarProgreso('curso6')"> <strong>Unidad 6:</strong> Colaboración en la creación de presentaciones en PowerPoint.</li>
+                            </ul>
+                            <div class="progress">
+                                <div id="curso6-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="curso6-completo" style="display: none;">¡Curso 6: Microsoft PowerPoint completado!</p>
                         </div>
-                    </td>
-                    <td>
-                        <div class="curso-info">
-                            <h3>Curso 7: Marketing Digital</h3>
-                            <p>Descubre las estrategias de marketing digital y cómo promocionar productos o servicios en línea.</p>
+                        <!-- Botón de Inscripción (fuera de las tablas) -->
+                        <div class="boton" style="text-align: center;">
+                            <a class="btn btn-primary" data-curso="curso6" data-completado="false" onclick="toggleInscripcion('curso6')">Inscribirse</a>
                         </div>
-                    </td>
-                </tr>
-            </table>
-            <!-- Tabla 2: Unidades del Curso -->
-            <div class="curso-unidades" id="curso7-unidades" style="display: none;">
-                <h4 class="text-left"><strong>Unidades:</strong></h4>
-                <ul class="list-unstyled">
-                    <li><input type="checkbox" id="curso7-unidad1" onchange="actualizarProgreso('curso7')"> <strong>Unidad 1:</strong> Fundamentos del marketing digital y estrategia en línea.</li>
-                    <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 2:</strong> Publicidad en línea y PPC (Pago por Clic).</li>
-                    <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 3:</strong> SEO (Optimización de motores de búsqueda) y SEM (Marketing en motores de búsqueda).</li>
-                    <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 4:</strong> Marketing de contenidos y estrategias en redes sociales.</li>
-                    <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 5:</strong> Analítica web y medición de resultados en marketing digital.</li>
-                    <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 6:</strong> Planificación y ejecución de campañas de marketing en línea.</li>
-                </ul>
-                <div class="progress">
-                    <div id="curso7-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p id="curso7-completo" style="display: none;">¡Curso 7: Marketing Digital completado!</p>
-            </div> 
-            <!-- Botón de Inscripción (fuera de las tablas) -->
-            <div class="boton" style="text-align: center;">
-                <a class="btn btn-primary" data-curso="curso7" data-completado="false" onclick="toggleInscripcion('curso7')">Inscribirse</a>
-            </div>
-            <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <p class="linea-negra"></p>
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+                        <!-- Curso 7: Marketing Digital -->
+                        <div class="curso" id="curso7">
+                            <div>
+                                <div>
+                                    <div class="curso-info">
+                                        <img src="Multimedia/curso7.jpg" alt="Curso 7">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="curso-info">
+                                        <h3>Curso 7: Marketing Digital</h3>
+                                        <p>Descubre las estrategias de marketing digital y cómo promocionar productos o servicios en línea.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tabla 2: Unidades del Curso -->
+                        <div class="curso-unidades" id="curso7-unidades" style="display: none;">
+                            <h4 class="text-left"><strong>Unidades:</strong></h4>
+                            <ul class="list-unstyled">
+                                <li><input type="checkbox" id="curso7-unidad1" onchange="actualizarProgreso('curso7')"> <strong>Unidad 1:</strong> Fundamentos del marketing digital y estrategia en línea.</li>
+                                <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 2:</strong> Publicidad en línea y PPC (Pago por Clic).</li>
+                                <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 3:</strong> SEO (Optimización de motores de búsqueda) y SEM (Marketing en motores de búsqueda).</li>
+                                <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 4:</strong> Marketing de contenidos y estrategias en redes sociales.</li>
+                                <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 5:</strong> Analítica web y medición de resultados en marketing digital.</li>
+                                <li><input type="checkbox" id="curso7-unidad2" onchange="actualizarProgreso('curso7')"> <strong>Unidad 6:</strong> Planificación y ejecución de campañas de marketing en línea.</li>
+                            </ul>
+                            <div class="progress">
+                                <div id="curso7-progress" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p id="curso7-completo" style="display: none;">¡Curso 7: Marketing Digital completado!</p>
+                        </div> 
+                        <!-- Botón de Inscripción (fuera de las tablas) -->
+                        <div class="boton" style="text-align: center;">
+                            <a class="btn btn-primary" data-curso="curso7" data-completado="false" onclick="toggleInscripcion('curso7')">Inscribirse</a>
+                        </div>
+                        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-    </section>
-
-    <div id="Completados">
-        <div class="container mt-4" id="cursos-completados" style="display: none;">
-            <h2><strong>Cursos Completados:</strong></h2>
-            <div class="row" id="cursos-completados-list">
-                <!-- Aca se agregan los cursos completados dinámicamente -->
+                </section>
+                <div id="Completados">
+                    <div class="container mt-4" id="cursos-completados" style="display: none;">
+                        <h2><strong>Cursos Completados:</strong></h2>
+                        <div class="row" id="cursos-completados-list">
+                            <!-- Aca se agregan los cursos completados dinámicamente -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
     <p class="linea-invisible"></p>
-
     <!-- Aca empieza el Pie de Pagina -->
     <footer>
         <div class="footer-content">
             <p>© 2023 CraftU. Todos los derechos reservados.</p>
         </div>
     </footer>
-
     <!-- Incluye Bootstrap JS y jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
